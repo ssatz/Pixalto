@@ -53,6 +53,328 @@
                     </div>
 
                 </li>
+                <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                    <button type="button" class="w-full py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <div class="flex items-center justify-between">
+                                <span class="text-base lg:text-xl">
+                                    How does Pixalto work?
+                                </span>
+                            <div>
+                                <!-- Down -->
+                                <svg x-show="selected == null" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                                <!-- UP -->
+                                <svg x-show="selected == 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" style="display: none;">
+                                    <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </button>
+
+                    <div class="relative overflow-hidden transition-all duration-700 max-h-0" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                        <div class="pb-6">
+                            <p class="text-gray-600">Pixalto uses advanced AI algorithms to analyze your photos and make adjustments to various elements such as color, brightness, contrast, and sharpness. The app can automatically detect and correct issues in your photos to produce a more polished and professional look.
+
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                    <button type="button" class="w-full py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <div class="flex items-center justify-between">
+                                <span class="text-base lg:text-xl">
+                                    Is Pixalto safe to use?
+                                </span>
+                            <div>
+                                <!-- Down -->
+                                <svg x-show="selected == null" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                                <!-- UP -->
+                                <svg x-show="selected == 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" style="display: none;">
+                                    <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </button>
+
+                    <div class="relative overflow-hidden transition-all duration-700 max-h-0" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                        <div class="pb-6">
+                            <p class="text-gray-600">Yes, Pixalto is safe to use. The app does not collect or store any personal information from its users.
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                    <button type="button" class="w-full py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <div class="flex items-center justify-between">
+                                <span class="text-base lg:text-xl">
+                                    What devices are compatible with Pixalto?
+                                </span>
+                            <div>
+                                <!-- Down -->
+                                <svg x-show="selected == null" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                                <!-- UP -->
+                                <svg x-show="selected == 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" style="display: none;">
+                                    <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </button>
+
+                    <div class="relative overflow-hidden transition-all duration-700 max-h-0" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                        <div class="pb-6">
+                            <p class="text-gray-600"> Pixalto is available for both iOS and Android devices. You can download the app from the App Store or Google Play Store.
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                    <button type="button" class="w-full py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <div class="flex items-center justify-between">
+                                <span class="text-base lg:text-xl">
+                                    Is Pixalto easy to use?
+                                </span>
+                            <div>
+                                <!-- Down -->
+                                <svg x-show="selected == null" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                                <!-- UP -->
+                                <svg x-show="selected == 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" style="display: none;">
+                                    <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </button>
+
+                    <div class="relative overflow-hidden transition-all duration-700 max-h-0" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                        <div class="pb-6">
+                            <p class="text-gray-600">  Yes, Pixalto is designed to be user-friendly and intuitive. All you need to do is select the photo you want to enhance and let the app do the rest.
+
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                    <button type="button" class="w-full py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <div class="flex items-center justify-between">
+                                <span class="text-base lg:text-xl">
+                                    Can I save my enhanced photos to my device?
+                                </span>
+                            <div>
+                                <!-- Down -->
+                                <svg x-show="selected == null" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                                <!-- UP -->
+                                <svg x-show="selected == 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" style="display: none;">
+                                    <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </button>
+
+                    <div class="relative overflow-hidden transition-all duration-700 max-h-0" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                        <div class="pb-6">
+                            <p class="text-gray-600">  Yes, you can save your enhanced photos directly to your device's camera roll or share them on social media platforms such as Instagram, Facebook, and Twitter.
+
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                    <button type="button" class="w-full py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <div class="flex items-center justify-between">
+                                <span class="text-base lg:text-xl">
+                                    Can Pixalto keep the processed image?
+                                </span>
+                            <div>
+                                <!-- Down -->
+                                <svg x-show="selected == null" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                                <!-- UP -->
+                                <svg x-show="selected == 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" style="display: none;">
+                                    <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </button>
+
+                    <div class="relative overflow-hidden transition-all duration-700 max-h-0" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                        <div class="pb-6">
+                            <p class="text-gray-600">  No, Pixalto does not keep the processed image. The processed image will be deleted from our secure server after one hour, and we do not save the original image.
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                    <button type="button" class="w-full py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <div class="flex items-center justify-between">
+                                <span class="text-base lg:text-xl">
+                                    What are the advantages of subscribing to Pixalto?  
+                                </span>
+                            <div>
+                                <!-- Down -->
+                                <svg x-show="selected == null" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                                <!-- UP -->
+                                <svg x-show="selected == 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" style="display: none;">
+                                    <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </button>
+
+                    <div class="relative overflow-hidden transition-all duration-700 max-h-0" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                        <div class="pb-6">
+                            <p class="text-gray-600">  Subscribing to Pixalto comes with several benefits, including the removal of ads, unlimited image downloads, the ability to share images via social media, and faster image processing.
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                    <button type="button" class="w-full py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <div class="flex items-center justify-between">
+                                <span class="text-base lg:text-xl">
+                                    What are the advantages of subscribing to Pixalto?  
+                                </span>
+                            <div>
+                                <!-- Down -->
+                                <svg x-show="selected == null" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                                <!-- UP -->
+                                <svg x-show="selected == 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" style="display: none;">
+                                    <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </button>
+
+                    <div class="relative overflow-hidden transition-all duration-700 max-h-0" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                        <div class="pb-6">
+                            <p class="text-gray-600">  Subscribing to Pixalto comes with several benefits, including the removal of ads, unlimited image downloads, the ability to share images via social media, and faster image processing.
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                    <button type="button" class="w-full py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <div class="flex items-center justify-between">
+                                <span class="text-base lg:text-xl">
+                                    How can I cancel my subscription?
+                                </span>
+                            <div>
+                                <!-- Down -->
+                                <svg x-show="selected == null" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                                <!-- UP -->
+                                <svg x-show="selected == 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" style="display: none;">
+                                    <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </button>
+
+                    <div class="relative overflow-hidden transition-all duration-700 max-h-0" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                        <div class="pb-6">
+                            <p class="text-gray-600">  To cancel your subscription, you can use the app store on both Android and iOS devices.
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+                  <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                    <button type="button" class="w-full py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <div class="flex items-center justify-between">
+                                <span class="text-base lg:text-xl">
+                                    How can I cancel my subscription?
+                                </span>
+                            <div>
+                                <!-- Down -->
+                                <svg x-show="selected == null" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                                <!-- UP -->
+                                <svg x-show="selected == 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" style="display: none;">
+                                    <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </button>
+
+                    <div class="relative overflow-hidden transition-all duration-700 max-h-0" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                        <div class="pb-6">
+                            <p class="text-gray-600">  To cancel your subscription, you can use the app store on both Android and iOS devices.
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                    <button type="button" class="w-full py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <div class="flex items-center justify-between">
+                                <span class="text-base lg:text-xl">
+                                    Why does image processing sometimes take longer than usual?
+                                </span>
+                            <div>
+                                <!-- Down -->
+                                <svg x-show="selected == null" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                                <!-- UP -->
+                                <svg x-show="selected == 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" style="display: none;">
+                                    <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </button>
+
+                    <div class="relative overflow-hidden transition-all duration-700 max-h-0" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                        <div class="pb-6">
+                            <p class="text-gray-600"> If you are uploading a large image, the processing time may take longer than usual. Typically, it takes approximately 3 to 5 minutes to process a large image.
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
             </ul>
         </div>
     </section>
