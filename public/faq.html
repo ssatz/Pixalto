@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixalto FAQ</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <header class="sticky top-0 flex items-center justify-center bg-white">
+        <div class="flex items-center justify-between w-full p-4 lg:px-12 md:max-w-5xl">
+            <a href="#">
+                <img src="images/pixelto-logo.png" class="h-10 md:h-12" alt="pixelto-logo">
+            </a>        
+            <div>
+                <a href="#">
+                    <button class="px-8 py-2 text-white rounded-md bg-primary-600 hover:text-blue-100">
+                        Follow Us
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>  
+    <section class="w-full px-4 pt-12 lg:p-4 lg:py-12">
+        <h2 class="text-xl text-center">Frequently asked questions</h2>
+        <div class="max-w-4xl mx-auto bg-white lg:pt-12">
+            <ul class="shadow-box">
+                <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                    <button type="button" class="w-full py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <div class="flex items-center justify-between">
+                                <span class="text-base lg:text-xl">
+                                  What is Pixalto? </span>
+                            <div>
+                                <!-- Down -->
+                                <svg x-show="selected == null" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                                <!-- UP -->
+                                <svg x-show="selected == 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" style="display: none;">
+                                    <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"></path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </button>
+
+                    <div class="relative overflow-hidden transition-all duration-700 max-h-0" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                        <div class="pb-6">
+                            <p class="text-gray-600">AI Photo Enhancer
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="w-full p-4 lg:py-6">
+        <div class="flex items-center justify-center">
+            <div class="w-full p-4 space-y-6 rounded-lg md:py-16 max-w-7xl bg-primary-100">
+                <h3 class="text-xl font-bold text-center lg:text-4xl text-primary-600">Download Our App From Andriod & iOS Store!</h3>
+                <div class="flex items-center justify-center">
+                    <div class="w-full max-w-2xl">
+                        <div class="flex flex-col items-center gap-8 lg:flex-row lg:gap-4">
+                            <div class="w-full">
+                                <a href="#"><img class="h-12" src="images/appstore.png" alt="appstore"></a>
+                            </div>
+                            <div class="w-full">
+                                <a href="#"><img class="h-12" src="images/googleplay.png" alt="playstore"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    <section class="w-full p-4 lg:py-6">
+        <div class="flex items-center justify-center">
+            <p class="text-center">Pixalto 2023. All rights reserved. <a href="/privacy" class="text-primary-600">Privacy policy</a>    </p>
+        </div>
+    </section>
+    <script src="//unpkg.com/alpinejs" defer></script>
+</body>
+</html>
